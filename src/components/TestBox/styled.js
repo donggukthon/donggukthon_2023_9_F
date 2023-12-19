@@ -14,7 +14,7 @@ export const Container = styled.div`
 
 export const Text = styled.p`
   color: white;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-align: center;
   line-height: 1.3;
 `;

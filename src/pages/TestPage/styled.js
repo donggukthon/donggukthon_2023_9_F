@@ -18,6 +18,7 @@ export const Container = styled.div`
 
 export const StepImage = styled.img`
   margin: 10vw;
+  width: 80vw;
 `;
 
 export const Button = styled.button`
@@ -26,7 +27,7 @@ export const Button = styled.button`
   margin-top: 3vh;
   border-radius: 30px;
   border: 1px solid white;
-  font-size: 1.2rem;
+  font-size: 1rem;
   background: rgba(255, 255, 255, 0);
   color: white;
 `;
