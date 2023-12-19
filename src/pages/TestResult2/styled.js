@@ -336,7 +336,7 @@ export const ButtonsCtaSecondary8 = styled.button`
 `;
 export const Testresult1Root = styled.div`
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 1260px;
   text-align: center;
   font-size: var(--font-size-3xs);

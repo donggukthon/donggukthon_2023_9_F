@@ -8,8 +8,8 @@ const BrowncircleboxIcon = styled.img`
   max-height: 100%;
   object-fit: contain;
   position: absolute;
-  left: 0px;
-  top: 4px;
+  left: 17%;
+  top: 6%;
   transform: scale(1.348);
 `;
 const WrapperBrowncirclebox = styled.div`
@@ -19,7 +19,7 @@ const WrapperBrowncirclebox = styled.div`
   top: 0%;
   right: 0%;
   bottom: 0%;
-  left: -13%;
+  left: calc(50% - 70px);
   border-radius: var(--br-21xl);
   display: flex;
   align-items: center;
@@ -29,8 +29,8 @@ const Div = styled.div`
   position: absolute;
   height: 91.3%;
   width: 77.5%;
-  top: 0%;
-  left: 0%;
+  top: -10%;
+  left: calc(50% - 40px);
   letter-spacing: -0.41px;
   line-height: 22px;
   font-weight: 500;
@@ -39,7 +39,7 @@ const Div = styled.div`
 const Component1Root = styled.div`
   position: absolute;
   top: 490px;
-  left: 15%;
+  left: calc(50% - 50px);
   width: 25vw;;
   height: 23px;
   text-align: center;
