@@ -1,6 +1,4 @@
-import BoxLarge from "../../components/BrownBox/BoxLarge";
-import Component1 from "../../components/Component1/Component1";
-import BrownBox from "../../components/BrownBox/BrownBox";
+import { BoxLarge, ColorBox, Tag } from "../../components";
 import {
   ButtonsCtaSecondary1,
   ButtonsCtaSecondary,
@@ -36,8 +34,7 @@ import {
   CircleLeft1,
   CircleLeft2,
   CircleLeft3,
-}from "./styled"
-
+} from "./styled";
 
 export const TestResult4 = () => {
   return (
@@ -51,18 +48,19 @@ export const TestResult4 = () => {
         <Div2>테스트 결과지</Div2>
       </Div>
       <Dotline />
-      <BoxLarge propTop="480px" />
-      <BoxLarge propTop="736px" />
-      <Component1 description="#겉촉속바 " propLeft="65px" />
-      <Component1 description="#쌍면성" propLeft="154px" />
-      <Component1 description="#선넘지마" propLeft="243px" />
+      <BoxLarge propTop="480px" boxColor="#CBB0A1" />
+      <BoxLarge propTop="736px" boxColor="#CBB0A1" />
+      <Tag description="#겉촉속바 " propLeft="65px" />
+      <Tag description="#쌍면성" propLeft="154px" />
+      <Tag description="#선넘지마" propLeft="243px" />
       <Div3>얼음이 들어간 핫초코형</Div3>
       <B>
         <Ul>
           <Li>{`겉으로는 다정하고 외향적으로 보이지만, 실제로 친해지면 무뚝뚝하고 쿨한 면이 있는 눈사람입니다.  `}</Li>
           <Li>{`주변에는 밝고 다정한 행동으로 친근한 이미지를 유지하여 이성친구는 많은 편이지만, 실제로는 이성친구에게 감정을 표현하는 것을 어려워하며 친밀한 관계에서도 거리를 두는 경향이 있어요. `}</Li>
           <Li2>
-          이성친구로서 지켜야할 것들은 지키며, 선을 넘지않는 경계를 잘 아는 편이에요.
+            이성친구로서 지켜야할 것들은 지키며, 선을 넘지않는 경계를 잘 아는
+            편이에요.
           </Li2>
         </Ul>
       </B>
@@ -70,25 +68,29 @@ export const TestResult4 = () => {
       <Div5>
         <P>{`다만, 속으로부터의 거리감 때문에 가끔은 오해를 받을 수 있으니, `}</P>
         <P>
-        친분을 유지하면서 상대방에게 충분한 공간을 주는 것이 중요할 수 있어요.
+          친분을 유지하면서 상대방에게 충분한 공간을 주는 것이 중요할 수 있어요.
         </P>
       </Div5>
       <WarningIcon alt="" src="/warning.png" />
-      <BrownBox
+      <ColorBox
         eyePersonalityEyeSynergyT="내 눈사람의 성향은 ?"
         propTop="448px"
+        boxColor="#AC8276"
       />
-      <BrownBox
+      <ColorBox
         eyePersonalityEyeSynergyT="나랑 시너지를 내는 눈사람 유형은 ?"
         propTop="701px"
+        boxColor="#AC8276"
       />
-      <BrownBox
+      <ColorBox
         eyePersonalityEyeSynergyT="Snowman Village에 눈사람 등록하기"
         propTop="924px"
+        boxColor="#AC8276"
       />
-      <BrownBox
+      <ColorBox
         eyePersonalityEyeSynergyT="SNS에 나만의 눈사람 공유하기"
         propTop="1051px"
+        boxColor="#AC8276"
       />
       <Div6>스포티한 눈썰매형</Div6>
       <ButtonsCtaSecondary2>
@@ -110,11 +112,11 @@ export const TestResult4 = () => {
       <CircleLeft1 alt="" src="ellipse-2@2x.png" />
       <CircleLeft2 alt="" src="ellipse-6@2x.png" />
       <CircleLeft3 alt="" src="ellipse-2@2x.png" />
-      
+
       <ButtonsCtaSecondary4>
         <ButtonsCtaSecondary1 />
         <B1>눈사람 등록</B1>
-      </ButtonsCtaSecondary4>    
+      </ButtonsCtaSecondary4>
       <ButtonsCtaSecondary6>
         <ButtonsCtaSecondary1 />
         <B1>ReTest</B1>
@@ -126,5 +128,3 @@ export const TestResult4 = () => {
     </Testresult1Root>
   );
 };
-
-

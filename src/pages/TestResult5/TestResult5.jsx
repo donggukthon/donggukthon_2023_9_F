@@ -1,6 +1,4 @@
-import BoxLarge from "../../components/PurpleBox/BoxLarge";
-import Component1 from "../../components/Component1/Component1";
-import PurpleBox from "../../components/PurpleBox/PurpleBox";
+import { BoxLarge, ColorBox, Tag } from "../../components";
 import {
   ButtonsCtaSecondary1,
   ButtonsCtaSecondary,
@@ -36,8 +34,7 @@ import {
   CircleLeft1,
   CircleLeft2,
   CircleLeft3,
-}from "./styled"
-
+} from "./styled";
 
 export const TestResult5 = () => {
   return (
@@ -51,18 +48,25 @@ export const TestResult5 = () => {
         <Div2>테스트 결과지</Div2>
       </Div>
       <Dotline />
-      <BoxLarge propTop="480px" />
-      <BoxLarge propTop="736px" />
-      <Component1 description="#겉바촉속 " propLeft="65px" />
-      <Component1 description="#은밀한따뜻" propLeft="154px" />
-      <Component1 description="#친친진국" propLeft="243px" />
+      <BoxLarge propTop="480px" boxColor="#B8A7C6" />
+      <BoxLarge propTop="736px" boxColor="#B8A7C6" />
+      <Tag description="#겉바촉속 " propLeft="65px" />
+      <Tag description="#은밀한따뜻" propLeft="154px" />
+      <Tag description="#친친진국" propLeft="243px" />
       <Div3>차가운 색감의 벨벳 머플러형</Div3>
       <B>
         <Ul>
-          <Li>{`겉은 벨벳으로 감싸져 있어 차갑고 닿기 전까지는 다소 거리감을 느낄 수 있지만, 속은 따뜻하고 포근한 마음을 품고 있는 눈사람입니다. `}</Li>
-          <Li>{`겉과 속의 대조적인 느낌이 이성친구들에게 호기심을 자극할 수 있어요.`}</Li>
+          <Li>
+            `겉은 벨벳으로 감싸져 있어 차갑고 닿기 전까지는 다소 거리감을 느낄
+            수 있지만, 속은 따뜻하고 포근한 마음을 품고 있는 눈사람입니다. `
+          </Li>
+          <Li>
+            `겉과 속의 대조적인 느낌이 이성친구들에게 호기심을 자극할 수
+            있어요.`
+          </Li>
           <Li2>
-          새로운 친구들을 새로 사귀기 보다는 기존의 친한 이성친구들과 시간을 보내며 이들과는 긴밀한 이야기를 나누곤해요.
+            새로운 친구들을 새로 사귀기 보다는 기존의 친한 이성친구들과 시간을
+            보내며 이들과는 긴밀한 이야기를 나누곤해요.
           </Li2>
         </Ul>
       </B>
@@ -70,25 +74,30 @@ export const TestResult5 = () => {
       <Div5>
         <P>{`다만, 겉으로는 차가운 인상을 주기 때문에,  `}</P>
         <P>
-        친해지고 싶은 이성친구에게는 감정을 표현해주는 노력이 필요할 수 있어요.
+          친해지고 싶은 이성친구에게는 감정을 표현해주는 노력이 필요할 수
+          있어요.
         </P>
       </Div5>
       <WarningIcon alt="" src="/warning.png" />
-      <PurpleBox
+      <ColorBox
         eyePersonalityEyeSynergyT="내 눈사람의 성향은 ?"
         propTop="448px"
+        boxColor="#9A7FA8"
       />
-      <PurpleBox
+      <ColorBox
         eyePersonalityEyeSynergyT="나랑 시너지를 내는 눈사람 유형은 ?"
         propTop="701px"
+        boxColor="#9A7FA8"
       />
-      <PurpleBox
+      <ColorBox
         eyePersonalityEyeSynergyT="Snowman Village에 눈사람 등록하기"
         propTop="924px"
+        boxColor="#9A7FA8"
       />
-      <PurpleBox
+      <ColorBox
         eyePersonalityEyeSynergyT="SNS에 나만의 눈사람 공유하기"
         propTop="1051px"
+        boxColor="#9A7FA8"
       />
       <Div6>소라게의 베레모형</Div6>
       <ButtonsCtaSecondary2>
@@ -110,11 +119,11 @@ export const TestResult5 = () => {
       <CircleLeft1 alt="" src="ellipse-2@2x.png" />
       <CircleLeft2 alt="" src="ellipse-6@2x.png" />
       <CircleLeft3 alt="" src="ellipse-2@2x.png" />
-      
+
       <ButtonsCtaSecondary4>
         <ButtonsCtaSecondary1 />
         <B1>눈사람 등록</B1>
-      </ButtonsCtaSecondary4>    
+      </ButtonsCtaSecondary4>
       <ButtonsCtaSecondary6>
         <ButtonsCtaSecondary1 />
         <B1>ReTest</B1>
@@ -126,5 +135,3 @@ export const TestResult5 = () => {
     </Testresult1Root>
   );
 };
-
-
