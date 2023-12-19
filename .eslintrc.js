@@ -39,5 +39,6 @@ module.exports = {
     "global-require": "off",
     "import/no-unresolved": "off",
     "no-use-before-define": "off",
+    "import/no-dynamic-require": "off",
   },
 };
