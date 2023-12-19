@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Longbox = styled.div`
+export const Longbox = styled.div`
   position: absolute;
   height: 100%;
   width: 100%;
@@ -9,11 +9,10 @@ const Longbox = styled.div`
   bottom: 0%;
   left: 0%;
   border-radius: 8px;
-background: rgba(235, 190, 191, 0.70);
-
-filter: blur(1px);
+  background-color: ${p => p.boxColor};
+  filter: blur(1px);
 `;
-const B = styled.b`
+export const B = styled.b`
   position: absolute;
   top: -1px;
   left: 0px;
@@ -21,7 +20,7 @@ const B = styled.b`
   width: 275px;
   height: 21px;
 `;
-const PinkboxRoot = styled.div`
+export const BoxContainer = styled.div`
   position: absolute;
   top: 448px;
   left: calc(50% - 145px);
@@ -31,16 +30,5 @@ const PinkboxRoot = styled.div`
   font-size: var(--font-size-mini-5);
   color: var(--color-darkslategray-100);
   font-family: var(--font-noto-sans-kr);
-  top: ${(p) => p.propTop};
+  top: ${p => p.propTop};
 `;
-
-const PinkBox = ({ eyePersonalityEyeSynergyT, propTop }) => {
-  return (
-    <PinkboxRoot propTop={propTop}>
-      <Longbox />
-      <B>{eyePersonalityEyeSynergyT}</B>
-    </PinkboxRoot>
-  );
-};
-
-export default PinkBox;

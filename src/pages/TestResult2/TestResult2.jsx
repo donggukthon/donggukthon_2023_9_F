@@ -1,6 +1,4 @@
-import BoxLarge from "../../components/BoxLarge/BoxLarge";
-import Component1 from "../../components/Component1/Component1";
-import PinkBox from "../../components/PinkBox/PinkBox";
+import { BoxLarge, ColorBox, Tag } from "../../components";
 import {
   ButtonsCtaSecondary1,
   ButtonsCtaSecondary,
@@ -36,8 +34,7 @@ import {
   CircleLeft1,
   CircleLeft2,
   CircleLeft3,
-}from "./styled"
-
+} from "./styled";
 
 export const TestResult2 = () => {
   return (
@@ -51,11 +48,11 @@ export const TestResult2 = () => {
         <Div2>테스트 결과지</Div2>
       </Div>
       <Dotline />
-      <BoxLarge propTop="480px" />
-      <BoxLarge propTop="736px" />
-      <Component1 description="#겉촉속촉 " propLeft="65px" />
-      <Component1 description="#차분과수줍 " propLeft="154px" />
-      <Component1 description="#부드러운" propLeft="243px" />
+      <BoxLarge propTop="480px" boxColor="var(--color-pink)" />
+      <BoxLarge propTop="736px" boxColor="var(--color-pink)" />
+      <Tag description="#겉촉속촉 " propLeft="65px" />
+      <Tag description="#차분과수줍 " propLeft="154px" />
+      <Tag description="#부드러운" propLeft="243px" />
       <Div3>소라게의 베레모형</Div3>
       <B>
         <Ul>
@@ -76,21 +73,25 @@ export const TestResult2 = () => {
         </P>
       </Div5>
       <WarningIcon alt="" src="/warning.png" />
-      <PinkBox
+      <ColorBox
         eyePersonalityEyeSynergyT="내 눈사람의 성향은 ?"
         propTop="448px"
+        boxColor="rgba(235, 190, 191, 0.70)"
       />
-      <PinkBox
+      <ColorBox
         eyePersonalityEyeSynergyT="나랑 시너지를 내는 눈사람 유형은 ?"
         propTop="701px"
+        boxColor="rgba(235, 190, 191, 0.70)"
       />
-      <PinkBox
+      <ColorBox
         eyePersonalityEyeSynergyT="Snowman Village에 눈사람 등록하기"
         propTop="924px"
+        boxColor="rgba(235, 190, 191, 0.70)"
       />
-      <PinkBox
+      <ColorBox
         eyePersonalityEyeSynergyT="SNS에 나만의 눈사람 공유하기"
         propTop="1051px"
+        boxColor="rgba(235, 190, 191, 0.70)"
       />
       <Div6>차가운 색감의 벨벳 머플러형</Div6>
       <ButtonsCtaSecondary2>
@@ -112,11 +113,11 @@ export const TestResult2 = () => {
       <CircleLeft1 alt="" src="ellipse-2@2x.png" />
       <CircleLeft2 alt="" src="ellipse-6@2x.png" />
       <CircleLeft3 alt="" src="ellipse-2@2x.png" />
-      
+
       <ButtonsCtaSecondary4>
         <ButtonsCtaSecondary1 />
         <B1>눈사람 등록</B1>
-      </ButtonsCtaSecondary4>    
+      </ButtonsCtaSecondary4>
       <ButtonsCtaSecondary6>
         <ButtonsCtaSecondary1 />
         <B1>ReTest</B1>
@@ -128,5 +129,3 @@ export const TestResult2 = () => {
     </Testresult1Root>
   );
 };
-
-

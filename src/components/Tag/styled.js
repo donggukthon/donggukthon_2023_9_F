@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const BrowncircleboxIcon = styled.img`
+export const BrowncircleboxIcon = styled.img`
   height: 100%;
   width: 100%;
   max-width: 100%;
@@ -12,7 +12,7 @@ const BrowncircleboxIcon = styled.img`
   top: 6%;
   transform: scale(1.348);
 `;
-const WrapperBrowncirclebox = styled.div`
+export const WrapperBrowncirclebox = styled.div`
   position: absolute;
   height: 100%;
   width: 100%;
@@ -25,7 +25,7 @@ const WrapperBrowncirclebox = styled.div`
   align-items: center;
   justify-content: center;
 `;
-const Div = styled.div`
+export const Div = styled.div`
   position: absolute;
   height: 91.3%;
   width: 77.5%;
@@ -36,28 +36,15 @@ const Div = styled.div`
   font-weight: 500;
   display: inline-block;
 `;
-const Component1Root = styled.div`
+export const Component1Root = styled.div`
   position: absolute;
   top: 490px;
   left: calc(50% - 50px);
-  width: 25vw;;
+  width: 25vw;
   height: 23px;
   text-align: center;
   font-size: var(--font-size-xs);
   color: var(--color-darkslategray-100);
   font-family: var(--font-noto-sans-kr);
-  left: ${(p) => p.propLeft};
+  left: ${p => p.propLeft};
 `;
-
-const Component1 = ({ description, propLeft }) => {
-  return (
-    <Component1Root propLeft={propLeft}>
-      <WrapperBrowncirclebox>
-        <BrowncircleboxIcon alt="" src="/browncirclebox@2x.png" />
-      </WrapperBrowncirclebox>
-      <Div>{description}</Div>
-    </Component1Root>
-  );
-};
-
-export default Component1;
