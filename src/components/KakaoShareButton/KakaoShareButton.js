@@ -16,17 +16,17 @@ right: 17.3%;
 bottom: 11.9%;
 left: 1%;
 border-radius: var(--br-8xs);
-background: linear-gradient(213.37deg, #fff, #fff 0.01%, #CDDCFF,#CDDCFF);
+background: linear-gradient(213.37deg, #fff, #fff 0.01%, ${props => props.buttonColor};,${props => props.buttonColor};);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 backdrop-filter: blur(4px);
 mix-blend-mode: normal;
 `;
 
-const KakaoShareButton = () => {
-  const { shareToKakao } = useKakaoShare();
+const KakaoShareButton = ({link, color}) => {
+  const { shareToKakao } = useKakaoShare(link);
 
   return (
-    <ShareButton onClick={shareToKakao}>SNS로 공유하기</ShareButton>
+    <ShareButton onClick={shareToKakao}buttonColor={color}>SNS로 공유하기</ShareButton>
   );
 };
 
