@@ -9,7 +9,6 @@ import {
   Dotline,
   Div3,
   Li,
-  Li2,
   Ul,
   B,
   Div4,
@@ -40,14 +39,14 @@ export const TestResult4 = () => {
   return (
     <Testresult1Root>
       <Div>
-        <ButtonsCtaSecondary>
-          <ButtonsCtaSecondary1 />
-        </ButtonsCtaSecondary>
-        <Div1>메인페이지로 돌아가기</Div1>
         <Child />
         <Div2>테스트 결과지</Div2>
       </Div>
       <Dotline />
+      <ButtonsCtaSecondary>
+          <ButtonsCtaSecondary1 />
+        </ButtonsCtaSecondary>
+        <Div1>메인페이지로 돌아가기</Div1>
       <BoxLarge propTop="480px" boxColor="#CBB0A1" />
       <BoxLarge propTop="736px" boxColor="#CBB0A1" />
       <Tag description="#겉촉속바 " propLeft="65px" />
@@ -58,10 +57,8 @@ export const TestResult4 = () => {
         <Ul>
           <Li>{`겉으로는 다정하고 외향적으로 보이지만, 실제로 친해지면 무뚝뚝하고 쿨한 면이 있는 눈사람입니다.  `}</Li>
           <Li>{`주변에는 밝고 다정한 행동으로 친근한 이미지를 유지하여 이성친구는 많은 편이지만, 실제로는 이성친구에게 감정을 표현하는 것을 어려워하며 친밀한 관계에서도 거리를 두는 경향이 있어요. `}</Li>
-          <Li2>
-            이성친구로서 지켜야할 것들은 지키며, 선을 넘지않는 경계를 잘 아는
-            편이에요.
-          </Li2>
+          <Li>{`이성친구로서 지켜야할 것들은 지키며, 선을 넘지않는 경계를 잘 아는
+            편이에요. `}</Li>
         </Ul>
       </B>
       <Div4>눈사람 여사친/남사친 성향 테스트</Div4>

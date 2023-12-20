@@ -10,6 +10,7 @@ import { TestResult5 } from "./pages/TestResult5";
 import { TestResult6 } from "./pages/TestResult6";
 import { TestResult7 } from "./pages/TestResult7";
 import { TestResult8 } from "./pages/TestResult8";
+import { Frame } from "./pages/Frame";
 
 const Router = () => {
   return (
@@ -25,6 +26,7 @@ const Router = () => {
         <Route path="/six" element={<TestResult6 />} />
         <Route path="/seven" element={<TestResult7 />} />
         <Route path="/eight" element={<TestResult8 />} />
+        <Route path="/nine" element={<Frame />} />
       </Routes>
     </BrowserRouter>
   );

@@ -9,7 +9,6 @@ import {
   Dotline,
   Div3,
   Li,
-  Li2,
   Ul,
   B,
   Div4,
@@ -39,15 +38,15 @@ import {
 export const TestResult8 = () => {
   return (
     <Testresult1Root>
-      <Div>
-        <ButtonsCtaSecondary>
-          <ButtonsCtaSecondary1 />
-        </ButtonsCtaSecondary>
-        <Div1>메인페이지로 돌아가기</Div1>
-        <Child />
-        <Div2>테스트 결과지</Div2>
-      </Div>
-      <Dotline />
+    <Div>
+      <Child />
+      <Div2>테스트 결과지</Div2>
+    </Div>
+    <Dotline />
+    <ButtonsCtaSecondary>
+        <ButtonsCtaSecondary1 />
+      </ButtonsCtaSecondary>
+      <Div1>메인페이지로 돌아가기</Div1>
       <BoxLarge propTop="480px" boxColor="#D7C773" />
       <BoxLarge propTop="736px" boxColor="#D7C773" />
       <Tag description="#겉바속촉 " propLeft="65px" />
@@ -57,18 +56,18 @@ export const TestResult8 = () => {
       <B>
         <Ul>
           <Li>
-            `겉으로는 쓸쓸하고 시크한 이미지를 갖춘 눈사람이지만, 이는 그저
-            겉치레일 뿐입니다.`
+            겉으로는 쓸쓸하고 시크한 이미지를 갖춘 눈사람이지만, 이는 그저
+            겉치레일 뿐입니다.
           </Li>
           <Li>
-            `속은 고요함과 동시에 따듯한 매력이 있어, 소소한 일상 속에서 특별한
-            순간을 찾아 즐기는 것을 즐겨해요.`
+            속은 고요함과 동시에 따듯한 매력이 있어, 소소한 일상 속에서 특별한
+            순간을 찾아 즐기는 것을 즐겨해요.
           </Li>
-          <Li2>
-            실제 성격은 조용하면서도 깊은 감수성을 품고 있어, 이성친구들과의
+          <Li>
+          실제 성격은 조용하면서도 깊은 감수성을 품고 있어, 이성친구들과의
             대화에서는 심오한 이야기부터 가벼운 소소한 이야기까지 다양한 주제를
             공유하곤 해요.
-          </Li2>
+          </Li>
         </Ul>
       </B>
       <Div4>눈사람 여사친/남사친 성향 테스트</Div4>
@@ -82,22 +81,22 @@ export const TestResult8 = () => {
       <ColorBox
         eyePersonalityEyeSynergyT="내 눈사람의 성향은 ?"
         propTop="448px"
-        boxColor="#D7C773"
+        boxColor="#E5C54F"
       />
       <ColorBox
         eyePersonalityEyeSynergyT="나랑 시너지를 내는 눈사람 유형은 ?"
         propTop="701px"
-        boxColor="#D7C773"
+        boxColor="#E5C54F"
       />
       <ColorBox
         eyePersonalityEyeSynergyT="Snowman Village에 눈사람 등록하기"
         propTop="924px"
-        boxColor="#D7C773"
+        boxColor="#E5C54F"
       />
       <ColorBox
         eyePersonalityEyeSynergyT="SNS에 나만의 눈사람 공유하기"
         propTop="1051px"
-        boxColor="#D7C773"
+        boxColor="#E5C54F"
       />
       <Div6>포근한 극세사 담요형</Div6>
       <ButtonsCtaSecondary2>

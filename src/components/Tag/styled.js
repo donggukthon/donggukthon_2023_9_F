@@ -19,7 +19,7 @@ export const WrapperBrowncirclebox = styled.div`
   top: 0%;
   right: 0%;
   bottom: 0%;
-  left: calc(50% - 70px);
+  left: calc(50% - 65px);
   border-radius: var(--br-21xl);
   display: flex;
   align-items: center;
@@ -30,7 +30,7 @@ export const Div = styled.div`
   height: 91.3%;
   width: 77.5%;
   top: -10%;
-  left: calc(50% - 40px);
+  left: calc(50% - 38px);
   letter-spacing: -0.41px;
   line-height: 22px;
   font-weight: 500;
@@ -39,12 +39,18 @@ export const Div = styled.div`
 export const Component1Root = styled.div`
   position: absolute;
   top: 490px;
-  left: calc(50% - 50px);
   width: 25vw;
   height: 23px;
   text-align: center;
-  font-size: var(--font-size-xs);
   color: var(--color-darkslategray-100);
   font-family: var(--font-noto-sans-kr);
+  color: #102531;
+
+  text-align: center;
+  font-family: Noto Sans KR;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
   left: ${p => p.propLeft};
 `;

@@ -9,7 +9,6 @@ import {
   Dotline,
   Div3,
   Li,
-  Li2,
   Ul,
   B,
   Div4,
@@ -40,14 +39,14 @@ export const TestResult6 = () => {
   return (
     <Testresult1Root>
       <Div>
-        <ButtonsCtaSecondary>
-          <ButtonsCtaSecondary1 />
-        </ButtonsCtaSecondary>
-        <Div1>메인페이지로 돌아가기</Div1>
         <Child />
         <Div2>테스트 결과지</Div2>
       </Div>
       <Dotline />
+      <ButtonsCtaSecondary>
+          <ButtonsCtaSecondary1 />
+        </ButtonsCtaSecondary>
+        <Div1>메인페이지로 돌아가기</Div1>
       <BoxLarge propTop="480px" boxColor="#96ACB4" />
       <BoxLarge propTop="736px" boxColor="#96ACB4" />
       <Tag description="#겉바속바 " propLeft="65px" />
@@ -64,11 +63,11 @@ export const TestResult6 = () => {
             `무관심한 표정과 거리를 두는 태도로 주변에 일정한 거리를 유지하며,
             감정을 표현하는 것을 꺼리는 편입니다.`
           </Li>
-          <Li2>
-            이성친구들에게는 쿨한 친구로 인식되지만, 간혹 마음을 터놓을 수 있는
+          <Li>
+          이성친구들에게는 쿨한 친구로 인식되지만, 간혹 마음을 터놓을 수 있는
             이성친구가 생기면, 그 안에 감춰진 따뜻한 마음을 알아채게 될 수도
             있어요!
-          </Li2>
+          </Li>
         </Ul>
       </B>
       <Div4>눈사람 여사친/남사친 성향 테스트</Div4>

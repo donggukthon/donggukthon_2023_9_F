@@ -32,7 +32,7 @@ export const Frame = () => {
       <Icon alt="" src="/snow.png" />
       <Icon1 alt="" src="/snow.png" />
       <WrapperGroup314>
-        <WrapperGroup314Child alt="" src="/group-314@2x.png" />
+        <WrapperGroup314Child alt="" src="/group-406@2x.png" />
       </WrapperGroup314>
       <Child />
       <ButtonsCtaSecondary>

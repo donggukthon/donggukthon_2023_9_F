@@ -9,7 +9,6 @@ import {
   Dotline,
   Div3,
   Li,
-  Li2,
   Ul,
   B,
   Div4,
@@ -40,14 +39,14 @@ export const TestResult7 = () => {
   return (
     <Testresult1Root>
       <Div>
-        <ButtonsCtaSecondary>
-          <ButtonsCtaSecondary1 />
-        </ButtonsCtaSecondary>
-        <Div1>메인페이지로 돌아가기</Div1>
         <Child />
         <Div2>테스트 결과지</Div2>
       </Div>
       <Dotline />
+      <ButtonsCtaSecondary>
+          <ButtonsCtaSecondary1 />
+        </ButtonsCtaSecondary>
+        <Div1>메인페이지로 돌아가기</Div1>
       <BoxLarge propTop="480px" boxColor="#F4DFA9" />
       <BoxLarge propTop="736px" boxColor="#F4DFA9" />
       <Tag description="#겉촉속촉 " propLeft="65px" />
@@ -56,16 +55,16 @@ export const TestResult7 = () => {
       <Div3>포근한 극세사 담요형 </Div3>
       <B>
         <Ul>
-          <Li>`부드럽고 따뜻하여, 누구에게나 포근한 성격의 눈사람입니다.`</Li>
+          <Li>부드럽고 따뜻하여, 누구에게나 포근한 성격의 눈사람입니다.</Li>
           <Li>
-            `상대방의 입장을 이해하고 공감하는 능력이 뛰어나기 때문에,
+            상대방의 입장을 이해하고 공감하는 능력이 뛰어나기 때문에,
             이성친구들이 언제든지 자신을 편하게 털어놓을 수 있는 안전지대로
-            여기곤해요.`
+            여기곤해요.
           </Li>
-          <Li2>
-            남을 배려하고 따뜻한 마음을 가진 당신은 상대방의 기분을 살필 줄 아는
+          <Li>
+          남을 배려하고 따뜻한 마음을 가진 당신은 상대방의 기분을 살필 줄 아는
             능력으로, 주변에서도 다정한 눈사람으로 불리곤해요.
-          </Li2>
+          </Li>
         </Ul>
       </B>
       <Div4>눈사람 여사친/남사친 성향 테스트</Div4>
