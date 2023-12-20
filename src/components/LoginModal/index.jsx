@@ -19,13 +19,21 @@ const LoginModal = () => {
     navigate("/test/0");
   };
 
+  const handleGoogleLogin = () => {
+    window.location.href = `https://accounts.google.com/o/oauth2/v2/auth?
+		client_id=${process.env.REACT_APP_GOOGLE_AUTH_CLIENT_ID}
+		&redirect_uri=${process.env.REACT_APP_GOOGLE_AUTH_REDIRECT_URI}
+		&response_type=code
+		&scope=email profile`;
+  };
+
   const handleKakaoLogin = () => {
     window.location.href = kakaoURL;
   };
 
   return (
     <Container>
-      <GoogleButton>
+      <GoogleButton onClick={handleGoogleLogin}>
         <img src={google} alt="google" />
         &nbsp;Google 계정으로 로그인
       </GoogleButton>

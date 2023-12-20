@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { useRecoilValue } from "recoil";
-import { axiosInstance } from "../../apis";
 import { testState } from "../../store/atoms";
 import { TestHeader } from "../../components";
 import {
@@ -18,21 +18,36 @@ const TestPage = () => {
   const testStateValue = useRecoilValue(testState);
   const values = `${testStateValue.T}${testStateValue.F}${testStateValue.E}${testStateValue.I}${testStateValue.X}${testStateValue.O}`;
   console.log(values);
-
-  const getResult = async () => {
-    try {
-      const response = await axiosInstance.get(
-        `/api/v1/test-result?result=${values}`,
-      );
-      console.log(response);
-    } catch (err) {
-      console.error(err);
-    }
-  };
+  const navigate = useNavigate();
 
   useEffect(() => {
-    getResult();
-  }, []);
+    const routeMap = {
+      303030: "/one",
+      212121: "/one",
+      "031203": "/two",
+      120312: "/two",
+      "030330": "/three",
+      121221: "/three",
+      "033030": "/four",
+      122121: "/four",
+      301203: "/five",
+      210312: "/five",
+      300330: "/six",
+      211221: "/six",
+      "032103": "/seven",
+      123012: "/seven",
+      302103: "/eight",
+      213012: "/eight",
+    };
+
+    // Get the route based on the values
+    const route = routeMap[values];
+
+    // Redirect to the appropriate page after 2 seconds
+    setTimeout(() => {
+      navigate(route);
+    }, 2000);
+  }, [navigate, values]);
 
   return (
     <>
