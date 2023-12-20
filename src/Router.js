@@ -11,6 +11,7 @@ import { TestResult5 } from "./pages/TestResult5";
 import { TestResult6 } from "./pages/TestResult6";
 import { TestResult7 } from "./pages/TestResult7";
 import { TestResult8 } from "./pages/TestResult8";
+import KakaoShareButton from './pages/Kakao';
 import { Frame } from "./pages/Frame";
 
 const Router = () => {
@@ -29,6 +30,7 @@ const Router = () => {
         <Route path="/seven" element={<TestResult7 />} />
         <Route path="/eight" element={<TestResult8 />} />
         <Route path="/nine" element={<Frame />} />
+        <Route path="/ten" element={<KakaoShareButton/>} />
       </Routes>
     </BrowserRouter>
   );
