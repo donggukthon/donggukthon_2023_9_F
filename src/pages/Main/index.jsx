@@ -8,6 +8,7 @@ import {
   StartButton,
   Container,
   MenuImage,
+  Text,
 } from "./styled";
 import main from "../../assets/images/main.png";
 import logo from "../../assets/images/main_logo.png";
@@ -31,6 +32,7 @@ const Main = () => {
       <Background />
       <SnowAnimation />
       <MenuImage src={menu} alt="menu" onClick={handleMenuClick} />
+      <Text>나는 이성 친구들에게 어떤 유형의 눈사람일까?</Text>
       <MainLogo src={logo} alt="logo" />
       <MainImage src={main} alt="main" />
       <SnowmanImage src={snowman} alt="snowman" />
