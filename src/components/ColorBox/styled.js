@@ -9,7 +9,7 @@ export const Longbox = styled.div`
   bottom: 0%;
   left: 0%;
   border-radius: 8px;
-  background-color: ${p => p.boxColor};
+  background: ${p => p.boxColor};
   filter: blur(1px);
 `;
 export const B = styled.b`
@@ -19,16 +19,20 @@ export const B = styled.b`
   display: inline-block;
   width: 275px;
   height: 21px;
+  color: ${p => p.fontColor};
 `;
 export const BoxContainer = styled.div`
   position: absolute;
   top: 448px;
-  left: calc(50% - 145px);
+  left: calc(50% - 130px);
   width: 275px;
   height: 20px;
+  color: #102531;
   text-align: center;
-  font-size: var(--font-size-mini-5);
-  color: var(--color-darkslategray-100);
-  font-family: var(--font-noto-sans-kr);
+  font-family: Noto Sans KR;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
   top: ${p => p.propTop};
 `;

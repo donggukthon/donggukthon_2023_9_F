@@ -9,7 +9,6 @@ import {
   Dotline,
   Div3,
   Li,
-  Li2,
   Ul,
   B,
   Div4,
@@ -40,14 +39,14 @@ export const TestResult5 = () => {
   return (
     <Testresult1Root>
       <Div>
-        <ButtonsCtaSecondary>
-          <ButtonsCtaSecondary1 />
-        </ButtonsCtaSecondary>
-        <Div1>메인페이지로 돌아가기</Div1>
         <Child />
         <Div2>테스트 결과지</Div2>
       </Div>
       <Dotline />
+      <ButtonsCtaSecondary>
+          <ButtonsCtaSecondary1 />
+        </ButtonsCtaSecondary>
+        <Div1>메인페이지로 돌아가기</Div1>
       <BoxLarge propTop="480px" boxColor="#B8A7C6" />
       <BoxLarge propTop="736px" boxColor="#B8A7C6" />
       <Tag description="#겉바촉속 " propLeft="65px" />
@@ -64,17 +63,17 @@ export const TestResult5 = () => {
             `겉과 속의 대조적인 느낌이 이성친구들에게 호기심을 자극할 수
             있어요.`
           </Li>
-          <Li2>
-            새로운 친구들을 새로 사귀기 보다는 기존의 친한 이성친구들과 시간을
+          <Li>
+          새로운 친구들을 새로 사귀기 보다는 기존의 친한 이성친구들과 시간을
             보내며 이들과는 긴밀한 이야기를 나누곤해요.
-          </Li2>
+          </Li>
         </Ul>
       </B>
       <Div4>눈사람 여사친/남사친 성향 테스트</Div4>
       <Div5>
-        <P>{`다만, 겉으로는 차가운 인상을 주기 때문에,  `}</P>
+        <P>{`다만, 겉으로는 차가운 인상을 주기 때문에, 친해지고 `}</P>
         <P>
-          친해지고 싶은 이성친구에게는 감정을 표현해주는 노력이 필요할 수
+          싶은 이성친구에게는 감정을 표현해주는 노력이 필요할 수
           있어요.
         </P>
       </Div5>

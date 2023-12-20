@@ -9,7 +9,6 @@ import {
   Dotline,
   Div3,
   Li,
-  Li2,
   Ul,
   B,
   Div4,
@@ -40,14 +39,14 @@ export const TestResult1 = () => {
   return (
     <Testresult1Root>
       <Div>
-        <ButtonsCtaSecondary>
-          <ButtonsCtaSecondary1 />
-        </ButtonsCtaSecondary>
-        <Div1>메인페이지로 돌아가기</Div1>
         <Child />
         <Div2>테스트 결과지</Div2>
       </Div>
       <Dotline />
+      <ButtonsCtaSecondary>
+          <ButtonsCtaSecondary1 />
+        </ButtonsCtaSecondary>
+        <Div1>메인페이지로 돌아가기</Div1>
       <BoxLarge propTop="480px" boxColor="#CDDCFF" />
       <BoxLarge propTop="736px" boxColor="#CDDCFF" />
       <Tag description="#겉바속바 " propLeft="65px" />
@@ -59,7 +58,6 @@ export const TestResult1 = () => {
           <Li>{`언제나 활기차고 에너제틱한 스포티한 느낌의 눈사람이에요. `}</Li>
           <Li>{`어떤 활동이든 즉흥적으로 참여하고, 무엇보다 동적인 활동을 통해 스트레스를 해소하는 스타일이에요. `}</Li>
           <Li>{`이성친구들 앞에서도 낯을 가리지않고, 다함께 어울리는 것을 좋아하며 털털하고 쿨한 성격으로 인하여 주위에 많은 친구들이 모이는 편이에요.  `}</Li>
-          <Li2>이성친구는 이성친구 일 뿐! 더 의미부여를 하지 않아요.</Li2>
         </Ul>
       </B>
       <Div4>눈사람 여사친/남사친 성향 테스트</Div4>
@@ -71,22 +69,22 @@ export const TestResult1 = () => {
       <ColorBox
         eyePersonalityEyeSynergyT="내 눈사람의 성향은 ?"
         propTop="448px"
-        boxColor="#CDDCFF"
+        boxColor="#9CB2E4"
       />
       <ColorBox
         eyePersonalityEyeSynergyT="나랑 시너지를 내는 눈사람 유형은 ?"
         propTop="701px"
-        boxColor="#CDDCFF"
+        boxColor="#9CB2E4"
       />
       <ColorBox
         eyePersonalityEyeSynergyT="Snowman Village에 눈사람 등록하기"
         propTop="924px"
-        boxColor="#CDDCFF"
+        boxColor="#9CB2E4"
       />
       <ColorBox
         eyePersonalityEyeSynergyT="SNS에 나만의 눈사람 공유하기"
         propTop="1051px"
-        boxColor="#CDDCFF"
+        boxColor="#9CB2E4"
       />
       <Div6>얼음이 들어간 핫초코형</Div6>
       <ButtonsCtaSecondary2>

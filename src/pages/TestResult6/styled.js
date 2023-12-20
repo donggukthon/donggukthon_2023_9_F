@@ -11,56 +11,57 @@ export const ButtonsCtaSecondary1 = styled.div`
   border-radius: var(--br-6xl);
 `;
 export const ButtonsCtaSecondary = styled.button`
-  cursor: pointer;
-  border: 1px solid #134560;
-  padding: 0;
-  background-color: transparent;
-  position: absolute;
-  height: 3.53%;
-  width: 85.13%;
-  top: 91.5%;
-  right: 7.82%;
-  bottom: 2.6%;
-  left: 7.05%;
-  border-radius: var(--br-8xs);
-  background: linear-gradient(213.37deg, #fff, #dfdede);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(4px);
-  box-sizing: border-box;
-  mix-blend-mode: normal;
+position: absolute;
+top: 92%;
+left: 7%;
+border-radius: 5px;
+border: 1px solid #134560;
+
+background: linear-gradient(213deg, #FFF 32.82%, #DFDEDE 84.65%);
+
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+backdrop-filter: blur(2px);
+display: flex;
+width: 331px;
+height: 44.87px;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
 `;
 export const Div1 = styled.div`
 position: absolute;
-top: 92%; // 또는 원하는 위치에 맞게 조정
-left: 50%;
-transform: translateX(-50%); // 가운데 정렬
-color: #102531; // 배경색과 대조되는 색상
+top: 92.5%;
+left: 28%;
+color: #102531;
 text-align: center;
-font-family: "KOTRA HOPE"; // 폰트 이름에 따옴표 추가
+font-family: KOTRA HOPE;
 font-size: 24px;
-line-height: normal; // 또는 24px 등으로 명확한 값 설정
-width: 194px;
-height: auto; // 또는 적어도 텍스트 높이보다 높은 값
-flex-shrink: 0;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
 `;
 export const Child = styled.div`
   position: absolute;
   top: 67.5px;
   left: -3.5px;
-  border-top: 1px solid var(--color-darkgray);
+  border-top: 1px solid #B0B0B0;
   box-sizing: border-box;
   width: 100%;
   height: 1px;
 `;
 export const Div2 = styled.div`
-  position: absolute;
-  top: 16px;
-  left: calc(50% - 90px);
-  font-size: 32px;
-  color: var(--color);
-  display: inline-block;
-  width: 194px;
-  height: 14px;
+position: absolute;
+left:33%;
+top:1%;
+color: #FFFFFF;
+text-align: center;
+font-family: KOTRA HOPE;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
 `;
 export const Div = styled.div`
   position: absolute;
@@ -68,7 +69,7 @@ export const Div = styled.div`
   left: 0vw;
   background-color: var(--color-gray-100);
   width: 100vw;
-  height: 150vh;
+  height: 100vh;
   overflow: hidden;
   font-size: 2vw;
   color: var(--color-gray-100);
@@ -79,35 +80,43 @@ export const Dotline = styled.div`
   top: 97px;
   left: 31px;
   text-align: center;
-  border-radius: var(--br-21xl);
   background-color: #1D3855;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border: 3px dashed var(--color);
+  border: 4px dashed #FFFFFF;
   box-sizing: border-box;
   width: 85vw;
   height: 1031px;
+  border-radius: 24px;
+  background: #1D3855;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 `;
 export const Div3 = styled.div`
   position: absolute;
   top: 189px;
-  left: calc(50% - 130px);
-  font-size: 29px;
+  left: calc(50% - 154px);
+  font-size: 25px;
   letter-spacing: -0.41px;
   line-height: 25px;
   font-weight: 800;
   font-family: var(--font-tmoney-roundwind);
+  color:#FFFFFF;
 `;
 export const Li = styled.li`
   margin-bottom: 0px;
+  color: #323232;
+  font-family: Noto Sans KR;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17px;
 `;
-export const Li2 = styled.li``;
 export const Ul = styled.ul`
   margin: 0;
   position: absolute;
-  left: calc(50% - 140.5px);
+  left: calc(50% - 130px);
   font-family: inherit;
   font-size: inherit;
   padding-left: 13px;
+ 
 `;
 export const B = styled.b`
   position: absolute;
@@ -128,24 +137,35 @@ export const Div4 = styled.div`
   font-size: 15px;
   letter-spacing: -0.41px;
   line-height: 22px;
+  color:#FFFFFF;
 `;
 export const P = styled.p`
   margin: 0;
   
+  
 `;
 export const Div5 = styled.div`
   position: absolute;
-  top: 663px;
+  top: 52.3%;
   left: calc(50% - 159.5px);
   letter-spacing: -0.41px;
   line-height: 13px;
   display: inline-block;
   width: 319px;
+
+color: #FFFFFF;
+text-align: center;
+font-family: Noto Sans;
+font-size: 9px;
+font-style: normal;
+font-weight: 500;
+line-height: 15px; /* 150% */
+letter-spacing: -0.408px;
 `;
 export const WarningIcon = styled.img`
   position: absolute;
-  top: 660px;
-  left: 20%;
+  top: 658px;
+  left: 70px;
   width: 15px;
   height: 15px;
   object-fit: cover;
@@ -153,7 +173,7 @@ export const WarningIcon = styled.img`
 export const Div6 = styled.div`
   position: absolute;
   top: 743px;
-  left: calc(50% - 143.5px);
+  left: calc(50% - 135px);
   font-size: 20px;
   font-weight: 800;
   font-family: var(--font-tmoney-roundwind);
@@ -187,8 +207,8 @@ export const ButtonsCtaSecondary2 = styled.button`
   bottom: 28.97%;
   left: calc(50% - 65px);
   border-radius: var(--br-8xs);
-  background: linear-gradient(213.37deg, #fff, #fff 0.01%, #FFFFFF, #96ACB4);
-  box-shadow: 0px 4px px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(213.37deg, #fff, #fff 0.01%, #96ACB4, #96ACB4);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(4px);
   mix-blend-mode: normal;
 `;
@@ -204,7 +224,7 @@ export const Testresult1Child = styled.div`
 export const Testresult1Item = styled.div`
   position: absolute;
   top: calc(50% + 331px);
-  left: calc(50% - 143.5px);
+  left: calc(50% - 134px);
   border-radius: var(--br-3xs);
   background-color: #96ACB4;
   width: 282px;
@@ -256,16 +276,16 @@ export const WrapperGroup406 = styled.div`
 export const Icon = styled.img`
   position: absolute;
   top: 224px;
-  left: calc(50% - 80px);
+  left: calc(50% - 75px);
   width: 150px;
-  height: 216px;
+  height: 220px;
   object-fit: cover;
 `;
 export const Icon1 = styled.img`
   position: absolute;
-  top: 774px;
-  left: calc(50% - 43.5px);
-  width: 90px;
+  top: 765px;
+  left: calc(50% - 50px);
+  width: 100px;
   height: 100px;
   object-fit: cover;
 `;
@@ -291,7 +311,7 @@ export const ButtonsCtaSecondary4 = styled.button`
   bottom: 19.05%;
   left: 34.35%;
   border-radius: var(--br-8xs);
-  background: linear-gradient(213.37deg, #fff, #fff 0.01%, #FFFFFF, #96ACB4);
+  background: linear-gradient(213.37deg, #fff, #fff 0.01%, #96ACB4, #96ACB4);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(4px);
   mix-blend-mode: normal;
@@ -309,9 +329,9 @@ export const ButtonsCtaSecondary6 = styled.button`
   top: 86.43%;
   right: 53.94%;
   bottom: 11.9%;
-  left: 15.78%;
+  left: 16.78%;
   border-radius: var(--br-8xs);
-  background: linear-gradient(213.37deg, #fff, #fff 0.01%, #FFFFFF, #96ACB4);
+  background: linear-gradient(213.37deg, #fff, #fff 0.01%, #96ACB4, #96ACB4);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(4px);
   mix-blend-mode: normal;
@@ -327,21 +347,23 @@ export const ButtonsCtaSecondary8 = styled.button`
   top: 86.43%;
   right: 17.3%;
   bottom: 11.9%;
-  left: 52.42%;
+  left: 54.42%;
   border-radius: var(--br-8xs);
-  background: linear-gradient(213.37deg, #fff, #fff 0.01%, #FFFFFF,#96ACB4);
+  background: linear-gradient(213.37deg, #fff, #fff 0.01%, #96ACB4,#96ACB4);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(4px);
   mix-blend-mode: normal;
 `;
 export const Testresult1Root = styled.div`
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 1260px;
   text-align: center;
   font-size: var(--font-size-3xs);
   color: var(--color);
   font-family: var(--font-noto-sans);
+  background: #102531;
+  
 `;
 
 export const CircleLeft1 = styled.img`
