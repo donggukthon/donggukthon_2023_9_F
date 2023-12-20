@@ -14,7 +14,7 @@ import {
 import loading from "../../assets/images/loading.png";
 import circle from "../../assets/images/circle.png";
 
-const TestPage = () => {
+const ResultLoading = () => {
   const testStateValue = useRecoilValue(testState);
   const values = `${testStateValue.T}${testStateValue.F}${testStateValue.E}${testStateValue.I}${testStateValue.X}${testStateValue.O}`;
   console.log(values);
@@ -50,4 +50,4 @@ const TestPage = () => {
   );
 };
 
-export default TestPage;
+export default ResultLoading;

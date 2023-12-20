@@ -1,4 +1,3 @@
-// src/hooks/useKakaoShare.js
 import { useEffect } from 'react';
 
 const useKakaoShare = (linkUrl) => {

@@ -39,12 +39,12 @@ import {
 export const TestResult8 = () => {
   return (
     <Testresult1Root>
-    <Div>
-      <Child />
-      <Div2>테스트 결과지</Div2>
-    </Div>
-    <Dotline />
-    <ButtonsCtaSecondary>
+      <Div>
+        <Child />
+        <Div2>테스트 결과지</Div2>
+      </Div>
+      <Dotline />
+      <ButtonsCtaSecondary>
         <ButtonsCtaSecondary1 />
       </ButtonsCtaSecondary>
       <Div1>메인페이지로 돌아가기</Div1>
@@ -65,7 +65,7 @@ export const TestResult8 = () => {
             순간을 찾아 즐기는 것을 즐겨해요.
           </Li>
           <Li>
-          실제 성격은 조용하면서도 깊은 감수성을 품고 있어, 이성친구들과의
+            실제 성격은 조용하면서도 깊은 감수성을 품고 있어, 이성친구들과의
             대화에서는 심오한 이야기부터 가벼운 소소한 이야기까지 다양한 주제를
             공유하곤 해요.
           </Li>

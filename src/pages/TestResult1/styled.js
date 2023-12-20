@@ -11,57 +11,51 @@ export const ButtonsCtaSecondary1 = styled.div`
   border-radius: var(--br-6xl);
 `;
 export const ButtonsCtaSecondary = styled.button`
-position: absolute;
-top: 92%;
-left: 7%;
-border-radius: 5px;
-border: 1px solid #134560;
+  position: absolute;
+  top: 92%;
+  left: 7%;
+  border-radius: 5px;
+  border: 1px solid #134560;
 
-background: linear-gradient(213deg, #FFF 32.82%, #DFDEDE 84.65%);
+  background: linear-gradient(213deg, #fff 32.82%, #dfdede 84.65%);
 
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-backdrop-filter: blur(2px);
-display: flex;
-width: 331px;
-height: 44.87px;
-justify-content: center;
-align-items: center;
-flex-shrink: 0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2px);
+  display: flex;
+  width: 331px;
+  height: 44.87px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 `;
 export const Div1 = styled.div`
-position: absolute;
-top: 92.5%;
-left: 28%;
-color: #102531;
-text-align: center;
-font-family: KOTRA HOPE;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-
+  position: absolute;
+  top: 92.5%;
+  left: 28%;
+  color: #102531;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 `;
 export const Child = styled.div`
   position: absolute;
   top: 67.5px;
   left: -3.5px;
-  border-top: 1px solid #B0B0B0;
+  border-top: 1px solid #b0b0b0;
   box-sizing: border-box;
   width: 100%;
   height: 1px;
 `;
 export const Div2 = styled.div`
-position: absolute;
-left:33%;
-top:1%;
-color: #FFFFFF;
-text-align: center;
-font-family: KOTRA HOPE;
-font-size: 32px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-
+  color: #ffffff;
+  font-family: var(--font-kotra-hope);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 1.5vh;
 `;
 export const Div = styled.div`
   position: absolute;
@@ -80,13 +74,13 @@ export const Dotline = styled.div`
   top: 97px;
   left: 31px;
   text-align: center;
-  background-color: #2C4FA4;
-  border: 4px dashed #FFFFFF;
+  background-color: #2c4fa4;
+  border: 4px dashed #ffffff;
   box-sizing: border-box;
   width: 85vw;
   height: 1031px;
   border-radius: 24px;
-  background: #2C4FA4;
+  background: #2c4fa4;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 `;
 export const Div3 = styled.div`
@@ -98,7 +92,7 @@ export const Div3 = styled.div`
   line-height: 25px;
   font-weight: 800;
   font-family: var(--font-tmoney-roundwind);
-  color:#FFFFFF;
+  color: #ffffff;
 `;
 export const Li = styled.li`
   margin-bottom: 0px;
@@ -116,7 +110,6 @@ export const Ul = styled.ul`
   font-family: inherit;
   font-size: inherit;
   padding-left: 13px;
- 
 `;
 export const B = styled.b`
   position: absolute;
@@ -137,12 +130,10 @@ export const Div4 = styled.div`
   font-size: 15px;
   letter-spacing: -0.41px;
   line-height: 22px;
-  color:#FFFFFF;
+  color: #ffffff;
 `;
 export const P = styled.p`
   margin: 0;
-  
-  
 `;
 export const Div5 = styled.div`
   position: absolute;
@@ -153,14 +144,14 @@ export const Div5 = styled.div`
   display: inline-block;
   width: 319px;
 
-color: #FFFFFF;
-text-align: center;
-font-family: Noto Sans;
-font-size: 10px;
-font-style: normal;
-font-weight: 500;
-line-height: 15px; /* 150% */
-letter-spacing: -0.408px;
+  color: #ffffff;
+  text-align: center;
+  font-family: Noto Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px; /* 150% */
+  letter-spacing: -0.408px;
 `;
 export const WarningIcon = styled.img`
   position: absolute;
@@ -207,7 +198,7 @@ export const ButtonsCtaSecondary2 = styled.button`
   bottom: 28.97%;
   left: calc(50% - 65px);
   border-radius: var(--br-8xs);
-  background: linear-gradient(213.37deg, #fff, #fff 0.01%, #CDDCFF, #CDDCFF);
+  background: linear-gradient(213.37deg, #fff, #fff 0.01%, #cddcff, #cddcff);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(4px);
   mix-blend-mode: normal;
@@ -226,10 +217,9 @@ export const Testresult1Item = styled.div`
   top: calc(50% + 331px);
   left: calc(50% - 134px);
   border-radius: 8px;
-  background-color: #CDDCFF;
+  background-color: #cddcff;
   width: 282px;
   height: 70px;
-  
 `;
 export const SnowmanVillageContainer = styled.div`
   position: absolute;
@@ -312,12 +302,11 @@ export const ButtonsCtaSecondary4 = styled.button`
   bottom: 19.05%;
   left: 34.35%;
   border-radius: var(--br-8xs);
-  background: linear-gradient(213.37deg, #fff, #fff 0.01%, #CDDCFF, #CDDCFF);
+  background: linear-gradient(213.37deg, #fff, #fff 0.01%, #cddcff, #cddcff);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(4px);
   mix-blend-mode: normal;
   left: 35%;
-
 `;
 export const ButtonsCtaSecondary6 = styled.button`
   cursor: pointer;
@@ -332,7 +321,7 @@ export const ButtonsCtaSecondary6 = styled.button`
   bottom: 11.9%;
   left: 16.78%;
   border-radius: var(--br-8xs);
-  background: linear-gradient(213.37deg, #fff, #fff 0.01%, #CDDCFF, #CDDCFF);
+  background: linear-gradient(213.37deg, #fff, #fff 0.01%, #cddcff, #cddcff);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(4px);
   mix-blend-mode: normal;
@@ -350,7 +339,7 @@ export const ButtonsCtaSecondary8 = styled.button`
   bottom: 11.9%;
   left: 54.42%;
   border-radius: var(--br-8xs);
-  background: linear-gradient(213.37deg, #fff, #fff 0.01%, #CDDCFF,#CDDCFF);
+  background: linear-gradient(213.37deg, #fff, #fff 0.01%, #cddcff, #cddcff);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(4px);
   mix-blend-mode: normal;
@@ -364,32 +353,29 @@ export const Testresult1Root = styled.div`
   color: var(--color);
   font-family: var(--font-noto-sans);
   background: #102531;
-  
 `;
 
 export const CircleLeft1 = styled.img`
-position: absolute;
-top: 80%;
-left: 25%;
-width: 15px;
-height: 15px;
-object-fit: cover;
+  position: absolute;
+  top: 80%;
+  left: 25%;
+  width: 15px;
+  height: 15px;
+  object-fit: cover;
 `;
 export const CircleLeft2 = styled.img`
-position: absolute;
-top: 77.5%;
-left: 16.7%;
-width: 15px;
-height: 15px;
-object-fit: cover;
+  position: absolute;
+  top: 77.5%;
+  left: 16.7%;
+  width: 15px;
+  height: 15px;
+  object-fit: cover;
 `;
 export const CircleLeft3 = styled.img`
-position: absolute;
-top: 78%;
-left: 75%;
-width: 15px;
-height: 15px;
-object-fit: cover;
+  position: absolute;
+  top: 78%;
+  left: 75%;
+  width: 15px;
+  height: 15px;
+  object-fit: cover;
 `;
-
-

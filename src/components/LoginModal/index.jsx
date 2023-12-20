@@ -1,5 +1,6 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect } from "react";
+import axios from "axios";
+import { useNavigate, useLocation } from "react-router-dom";
 import {
   Container,
   GoogleButton,
@@ -10,26 +11,37 @@ import google from "../../assets/images/google.png";
 import kakao from "../../assets/images/kakao.png";
 
 const LoginModal = () => {
-  const REST_API_KEY = process.env.REST_API_KEY;
-  const REDIRECT_URI = process.env.REDIRECT_URI;
-  const kakaoURL = `https://noonsachin.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleNonmemberButtonClick = () => {
     navigate("/test/0");
   };
 
-  const handleKakaoLogin = () => {
-    window.location.href = kakaoURL;
+  const handleLogin = provider => {
+    window.location.href = `https://www.noonsachin.com/oauth2/authorization/${provider}`;
   };
+
+  useEffect(() => {
+    // Parse the URL to get the JWT
+    const jwt = new URL(window.location.href).searchParams.get("jwt");
+    console.log(jwt);
+    if (jwt) {
+      // If JWT exists, set it in the headers
+      axios.defaults.headers.common["Authorization"] = `Bearer ${jwt}`;
+
+      // Redirect to the home screen
+      navigate("/");
+    }
+  }, [navigate, location.search]);
 
   return (
     <Container>
-      <GoogleButton>
+      <GoogleButton onClick={() => handleLogin("google")}>
         <img src={google} alt="google" />
         &nbsp;Google 계정으로 로그인
       </GoogleButton>
-      <KakaoButton onClick={handleKakaoLogin}>
+      <KakaoButton onClick={() => handleLogin("kakao")}>
         <img src={kakao} alt="kakao" />
         &nbsp;카카오톡으로 로그인
       </KakaoButton>
