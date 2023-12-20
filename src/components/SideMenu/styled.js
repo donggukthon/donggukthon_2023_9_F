@@ -54,12 +54,13 @@ export const Close = styled.p`
 `;
 
 export const Button = styled.button`
-  width: 70%;
+  width: 80%;
   height: 8%;
-  border-radius: 10px;
+  border-radius: 15px;
+  margin-bottom: 5vh;
   color: #102531;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1rem;
   fill: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.2) 0%,

@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Main from "./pages/Main";
 import TestPage from "./pages/TestPage";
+import Loading from "./pages/ResultLoading";
 import { TestResult1 } from "./pages/TestResult1";
 import { TestResult2 } from "./pages/TestResult2";
 import { TestResult3 } from "./pages/TestResult3";
@@ -17,6 +18,7 @@ const Router = () => {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/test/:step" element={<TestPage />} />
+        <Route path="/loading" element={<Loading />} />
         <Route path="/one" element={<TestResult1 />} />
         <Route path="/two" element={<TestResult2 />} />
         <Route path="/three" element={<TestResult3 />} />

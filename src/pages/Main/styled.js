@@ -11,7 +11,7 @@ export const Background = styled.div`
 export const MainImage = styled.img`
   position: fixed;
   width: 100vw;
-  height: auto;
+  height: 70vh;
   bottom: 15vh;
   z-index: -1;
 `;
@@ -39,7 +39,6 @@ export const SnowmanImage = styled.img`
   left: 20%;
   z-index: -1;
 `;
-
 export const StartButton = styled.button`
   background: white;
   width: 85vw;
@@ -48,6 +47,7 @@ export const StartButton = styled.button`
   box-shadow: 0px 0px 8px 5px rgba(16, 37, 49, 0.5);
   font-size: 1.2rem;
   font-weight: bold;
+  position: relative;
 `;
 
 export const Container = styled.div`
@@ -57,4 +57,14 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+`;
+
+export const Text = styled.p`
+  position: fixed;
+  text-align: center;
+  width: 100vw;
+  top: 7.5vh;
+  z-index: 0;
+  font-size: 0.8rem;
+  color: #bdc3c7;
 `;

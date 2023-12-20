@@ -39,7 +39,7 @@ const TestPage = () => {
     if (nextStep <= 9) {
       navigate(`/test/${nextStep}`);
     } else {
-      navigate("/result");
+      navigate("/loading");
     }
   };
 
@@ -69,7 +69,7 @@ const TestPage = () => {
     if (nextStep <= 9) {
       navigate(`/test/${nextStep}`);
     } else {
-      navigate("/result");
+      navigate("/loading");
     }
   };
 
