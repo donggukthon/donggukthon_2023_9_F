@@ -10,9 +10,6 @@ import google from "../../assets/images/google.png";
 import kakao from "../../assets/images/kakao.png";
 
 const LoginModal = () => {
-  const REST_API_KEY = process.env.REACT_APP_REST_API_KEY;
-  const REDIRECT_URI = process.env.REACT_APP_REDIRECT_URI;
-  const kakaoURL = `https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
   const navigate = useNavigate();
 
   const handleNonmemberButtonClick = () => {
@@ -20,15 +17,11 @@ const LoginModal = () => {
   };
 
   const handleGoogleLogin = () => {
-    window.location.href = `https://accounts.google.com/o/oauth2/v2/auth?
-		client_id=${process.env.REACT_APP_GOOGLE_AUTH_CLIENT_ID}
-		&redirect_uri=${process.env.REACT_APP_GOOGLE_AUTH_REDIRECT_URI}
-		&response_type=code
-		&scope=email profile`;
+    window.location.href = `https://www.noonsachin.com/oauth2/authorization/google`;
   };
 
   const handleKakaoLogin = () => {
-    window.location.href = kakaoURL;
+    window.location.href = `https://www.noonsachin.com/oauth2/authorization/kakao`;
   };
 
   return (
