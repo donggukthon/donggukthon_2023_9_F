@@ -10,9 +10,9 @@ import google from "../../assets/images/google.png";
 import kakao from "../../assets/images/kakao.png";
 
 const LoginModal = () => {
-  const REST_API_KEY = process.env.REST_API_KEY;
-  const REDIRECT_URI = process.env.REDIRECT_URI;
-  const kakaoURL = `https://noonsachin.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
+  const REST_API_KEY = process.env.REACT_APP_REST_API_KEY;
+  const REDIRECT_URI = process.env.REACT_APP_REDIRECT_URI;
+  const kakaoURL = `https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
   const navigate = useNavigate();
 
   const handleNonmemberButtonClick = () => {
