@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { BoxLarge, ColorBox, Tag } from "../../components";
 import KakaoShareButton from '../../components/KakaoShareButton/KakaoShareButton';
 import {
@@ -37,6 +38,16 @@ import {
 } from "./styled";
 
 export const TestResult1 = () => {
+  const navigate = useNavigate();
+
+  const handleReTestClick = () => {
+    navigate("/test/0");
+  };
+
+  const handleGoMainClick = () => {
+    navigate("/");
+  };
+
   return (
     <Testresult1Root>
       <Div>
@@ -45,9 +56,9 @@ export const TestResult1 = () => {
       </Div>
       <Dotline />
       <ButtonsCtaSecondary>
-          <ButtonsCtaSecondary1 />
-        </ButtonsCtaSecondary>
-        <Div1>메인페이지로 돌아가기</Div1>
+        <ButtonsCtaSecondary1 />
+      </ButtonsCtaSecondary>
+      <Div1 onClick={handleGoMainClick}>메인페이지로 돌아가기</Div1>
       <BoxLarge propTop="480px" boxColor="#CDDCFF" />
       <BoxLarge propTop="736px" boxColor="#CDDCFF" />
       <Tag description="#겉바속바 " propLeft="65px" />
@@ -112,7 +123,7 @@ export const TestResult1 = () => {
         <ButtonsCtaSecondary1 />
         <B1>눈사람 등록</B1>
       </ButtonsCtaSecondary4>
-      <ButtonsCtaSecondary6>
+      <ButtonsCtaSecondary6 onClick={handleReTestClick}>
         <ButtonsCtaSecondary1 />
         <B1>ReTest</B1>
       </ButtonsCtaSecondary6>
