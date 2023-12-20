@@ -31,7 +31,7 @@ export const ButtonsCtaSecondary = styled.button`
 export const Div1 = styled.div`
   position: absolute;
   top: 92.5%;
-  left: 28%;
+  left: 20%;
   color: #102531;
   text-align: center;
   font-size: 24px;
@@ -217,7 +217,7 @@ export const Testresult1Item = styled.div`
   top: calc(50% + 331px);
   left: calc(50% - 134px);
   border-radius: var(--br-3xs);
-  background-color: #96acb4;
+  background-color: #D7C773;
   width: 282px;
   height: 70px;
 `;

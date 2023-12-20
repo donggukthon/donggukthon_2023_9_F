@@ -29,7 +29,7 @@ export const ButtonsCtaSecondary = styled.button`
 export const Div1 = styled.div`
   position: absolute;
   top: 92.5%;
-  left: 28%;
+  left: 20%;
   color: #102531;
   text-align: center;
   font-size: 24px;
