@@ -1,7 +1,6 @@
-// src/hooks/useKakaoShare.js
 import { useEffect } from 'react';
 
-const useKakaoShare = () => {
+const useKakaoShare = (linkUrl) => {
   useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://developers.kakao.com/sdk/js/kakao.js';
@@ -30,61 +29,38 @@ const useKakaoShare = () => {
       content: {
         title: '결과보러가기',
         description: '과연 나의 테스트 결과는 무엇일까?',
-        imageUrl: 'https://mud-kage.kakao.com/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg',
+        imageUrl: 'https://cdn.pixabay.com/photo/2014/12/22/00/07/snowman-576847_960_720.jpg',
         link: {
-          mobileWebUrl: 'https://developers.kakao.com',
-          webUrl: 'https://developers.kakao.com',
+          mobileWebUrl: linkUrl,
+          webUrl: linkUrl,
         },
       },
       itemContent: {
-        profileText: 'Kakao',
-        profileImageUrl: 'https://mud-kage.kakao.com/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
-        titleImageUrl: 'https://mud-kage.kakao.com/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
-        titleImageText: 'Cheese cake',
-        titleImageCategory: 'Cake',
+        profileText: '눈사친',
+        profileImageUrl: 'https://cdn.pixabay.com/photo/2014/12/22/00/07/snowman-576847_960_720.jpg',
+        titleImageUrl: 'https://cdn.pixabay.com/photo/2014/12/22/00/07/snowman-576847_960_720.jpg',
+        titleImageText: '눈사람TEST',
+        titleImageCategory: 'snow',
         items: [
           {
-            item: 'Cake1',
-            itemOp: '1000원',
-          },
-          {
-            item: 'Cake2',
-            itemOp: '2000원',
-          },
-          {
-            item: 'Cake3',
-            itemOp: '3000원',
-          },
-          {
-            item: 'Cake4',
-            itemOp: '4000원',
-          },
-          {
-            item: 'Cake5',
-            itemOp: '5000원',
+            item: '눈사람',
+            itemOp: '재밌다',
           },
         ],
-        sum: '총 결제금액',
-        sumOp: '15000원',
+        sum: '과연 결과는?',
+        sumOp: '두근두근',
       },
       social: {
-        likeCount: 10,
+        likeCount: 100,
         commentCount: 20,
-        sharedCount: 30,
+        sharedCount: 5000,
       },
       buttons: [
         {
-          title: '웹으로 이동',
+          title: '결과보러가기',
           link: {
-            mobileWebUrl: 'https://developers.kakao.com',
-            webUrl: 'https://developers.kakao.com',
-          },
-        },
-        {
-          title: '앱으로 이동',
-          link: {
-            mobileWebUrl: 'https://developers.kakao.com',
-            webUrl: 'https://developers.kakao.com',
+            mobileWebUrl: linkUrl,
+            webUrl: linkUrl,
           },
         },
       ],

@@ -32,7 +32,7 @@ const Router = () => {
         <Route path="/seven" element={<TestResult7 />} />
         <Route path="/eight" element={<TestResult8 />} />
         <Route path="/nine" element={<Frame />} />
-        <Route path="/ten" element={<KakaoShareButton />} />
+        <Route path="/ten" element={<KakaoShareButton/>} />
       </Routes>
     </BrowserRouter>
   );

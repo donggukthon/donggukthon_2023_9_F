@@ -129,9 +129,7 @@ export const TestResult1 = () => {
       </ButtonsCtaSecondary6>
       <ButtonsCtaSecondary8>
         <ButtonsCtaSecondary1 />
-        <KakaoShareButton>
-        <B1>SNS에 결과 공유</B1>
-        </KakaoShareButton>
+        <KakaoShareButton link="https://www.noonsachin.com/one" color="#CDDCFF" />
       </ButtonsCtaSecondary8>
     </Testresult1Root>
   );

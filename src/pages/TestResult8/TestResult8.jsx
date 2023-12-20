@@ -1,4 +1,5 @@
 import { BoxLarge, ColorBox, Tag } from "../../components";
+import KakaoShareButton from '../../components/KakaoShareButton/KakaoShareButton';
 import {
   ButtonsCtaSecondary1,
   ButtonsCtaSecondary,
@@ -129,7 +130,7 @@ export const TestResult8 = () => {
       </ButtonsCtaSecondary6>
       <ButtonsCtaSecondary8>
         <ButtonsCtaSecondary1 />
-        <B1>SNS에 결과 공유</B1>
+        <KakaoShareButton link="https://www.noonsachin.com/eight" color="#D7C773" />
       </ButtonsCtaSecondary8>
     </Testresult1Root>
   );
