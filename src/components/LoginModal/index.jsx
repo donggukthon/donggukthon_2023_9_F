@@ -1,6 +1,7 @@
-import React, { useEffect } from "react";
-import axios from "axios";
-import { useNavigate, useLocation } from "react-router-dom";
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import { useRecoilValue } from "recoil";
+import { loginState } from "../../store/atoms";
 import {
   Container,
   GoogleButton,
@@ -12,7 +13,7 @@ import kakao from "../../assets/images/kakao.png";
 
 const LoginModal = () => {
   const navigate = useNavigate();
-  const location = useLocation();
+  const isLoggedIn = useRecoilValue(loginState);
 
   const handleNonmemberButtonClick = () => {
     navigate("/test/0");
@@ -22,32 +23,27 @@ const LoginModal = () => {
     window.location.href = `https://www.noonsachin.com/oauth2/authorization/${provider}`;
   };
 
-  useEffect(() => {
-    // Parse the URL to get the JWT
-    const jwt = new URL(window.location.href).searchParams.get("jwt");
-    console.log(jwt);
-    if (jwt) {
-      // If JWT exists, set it in the headers
-      axios.defaults.headers.common["Authorization"] = `Bearer ${jwt}`;
-
-      // Redirect to the home screen
-      navigate("/");
-    }
-  }, [navigate, location.search]);
-
   return (
     <Container>
-      <GoogleButton onClick={() => handleLogin("google")}>
-        <img src={google} alt="google" />
-        &nbsp;Google 계정으로 로그인
-      </GoogleButton>
-      <KakaoButton onClick={() => handleLogin("kakao")}>
-        <img src={kakao} alt="kakao" />
-        &nbsp;카카오톡으로 로그인
-      </KakaoButton>
-      <NonmemberButton onClick={handleNonmemberButtonClick}>
-        &nbsp;비회원으로 테스트 하기&nbsp;
-      </NonmemberButton>
+      {isLoggedIn ? (
+        <NonmemberButton onClick={handleNonmemberButtonClick}>
+          &nbsp;테스트 하기&nbsp;
+        </NonmemberButton>
+      ) : (
+        <>
+          <GoogleButton onClick={() => handleLogin("google")}>
+            <img src={google} alt="google" />
+            &nbsp;Google 계정으로 로그인
+          </GoogleButton>
+          <KakaoButton onClick={() => handleLogin("kakao")}>
+            <img src={kakao} alt="kakao" />
+            &nbsp;카카오톡으로 로그인
+          </KakaoButton>
+          <NonmemberButton onClick={handleNonmemberButtonClick}>
+            &nbsp;비회원으로 테스트 하기&nbsp;
+          </NonmemberButton>
+        </>
+      )}
     </Container>
   );
 };
